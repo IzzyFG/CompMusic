@@ -5,4 +5,4 @@ filename: index.md
 --- 
 [>> Back](../../CompMusic/)
 
-# Lab 1: Build your own Keyboard
+# [Lab 1: Build your own Keyboard](keyboard)
