@@ -8,4 +8,4 @@ filename: index.md
 
 This repo is intended as a portfolio for my work in Barnard COMS 3430 Computational Music class class.
 
-## [Lab 1: Build your own keyboard](./Lab_1)
+## [Lab 1: Build your own keyboard](./lab_1)
