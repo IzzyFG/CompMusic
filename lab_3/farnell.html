@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab 3</title>
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<script src="main.js" defer></script>
+	<link rel="stylesheet" src="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-5">
+				<br>
+				<h1>Lab 3</h1>
+				<br>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col">
+				<div class="card" id = "brook_card">
+					<div class="card-header"> 
+						<h5>Babbling Brook</h5>
+					</div>
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src=".\src\river_upstate_NY.jpg"  class="img-fluid rounded-start" alt="River in Forest with rocks">
+						</div>
+
+						<div class="col-md-8">
+							<div class="card-body" id = "brook_body">
+								<p class="card-text">Click play to hear a babbling brook using BiquadNodes in WebAudio</p>
+								<button id="start_brook" class="btn btn-secondary">
+									Start/Stop
+								</button>
+								<span >
+									<canvas id="visualizer"></canvas>
+								</span>
+						
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+
+		<div class="row justify-content-center">
+			<div class="col">
+				<div class="card" id = "farnell_card">
+					<div class="card-header"> <h5> My New Sound</h5> </div>
+	 
+					<div class="card-body">
+						<p class="card-text">Click play to hear a sound I created based on Farnell, <i>Designing Sound Part IV: Practicals</i> Chapter 32: Fire.</p>
+
+						<button id="start_fire" class="btn btn-secondary">
+							Start/Stop
+						</button>
+
+						<!-- <span >
+							<canvas id="visualizer"></canvas>
+						</span> -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col">
+				 <canvas id="visualizer" width="800" height="300"></canvas> 
+			</div>
+
+		</div> 
+	  
+	</div>
+	
+<!-- 	
+	
+	<p>Use low freq values for lowpass.</p>
+	<p>Use high freq values for highpass.</p>
+	<p>Lowshelf is like highpass with less attenuation.</p>
+	<p>Highshelf is like lowpass with less attenuation.</p>
+	<p>BandPass allows a band to pass and attenuates others.</p>
+	<p>Peaking boost frequencies in the band.</p>
+	<p>Notch is the inverse of BandPass.</p>
+	<p>Allpass does nothing to whitenoise.</p> -->
+	<p>Read more here: <a href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode">https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode</a>
+	</p>
+
+</body>
+</html>
